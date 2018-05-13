@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211ABBF6209B466B004418AA /* MoreMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211ABBF5209B466B004418AA /* MoreMore.swift */; };
+		211ABBF8209B46AC004418AA /* MoreMore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211ABBF7209B46AC004418AA /* MoreMore.storyboard */; };
+		211ABC38209B6D71004418AA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211ABC37209B6D71004418AA /* NotificationService.swift */; };
+		211ABC3C209B6D71004418AA /* More.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 211ABC35209B6D71004418AA /* More.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B36911A1F2FBE78008E4971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3691191F2FBE78008E4971 /* AppDelegate.swift */; };
 		8B36911C1F2FBE78008E4971 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B36911B1F2FBE78008E4971 /* LoginViewController.swift */; };
 		8B3691211F2FBE78008E4971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3691201F2FBE78008E4971 /* Assets.xcassets */; };
@@ -20,7 +24,36 @@
 		8BC7A5621F2FD23F00AA0072 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7A5601F2FD19600AA0072 /* UIStoryboard.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		211ABC3A209B6D71004418AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B36910E1F2FBE78008E4971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211ABC34209B6D71004418AA;
+			remoteInfo = More;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		211ABC40209B6D71004418AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				211ABC3C209B6D71004418AA /* More.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		211ABBF5209B466B004418AA /* MoreMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreMore.swift; sourceTree = "<group>"; };
+		211ABBF7209B46AC004418AA /* MoreMore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreMore.storyboard; sourceTree = "<group>"; };
+		211ABC35209B6D71004418AA /* More.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = More.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		211ABC37209B6D71004418AA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		211ABC39209B6D71004418AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3691161F2FBE78008E4971 /* Swifty Router.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Router.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3691191F2FBE78008E4971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B36911B1F2FBE78008E4971 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		211ABC32209B6D71004418AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B3691131F2FBE78008E4971 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,11 +87,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211ABBF4209B4645004418AA /* MoreMore */ = {
+			isa = PBXGroup;
+			children = (
+				211ABBF5209B466B004418AA /* MoreMore.swift */,
+				211ABBF7209B46AC004418AA /* MoreMore.storyboard */,
+			);
+			path = MoreMore;
+			sourceTree = "<group>";
+		};
+		211ABC36209B6D71004418AA /* More */ = {
+			isa = PBXGroup;
+			children = (
+				211ABC37209B6D71004418AA /* NotificationService.swift */,
+				211ABC39209B6D71004418AA /* Info.plist */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		8B36910D1F2FBE78008E4971 = {
 			isa = PBXGroup;
 			children = (
 				8BCE0B381F2FC55800D9D83F /* Sources */,
 				8B3691181F2FBE78008E4971 /* Swifty Router */,
+				211ABC36209B6D71004418AA /* More */,
 				8B3691171F2FBE78008E4971 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8B3691161F2FBE78008E4971 /* Swifty Router.app */,
+				211ABC35209B6D71004418AA /* More.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +127,7 @@
 		8B3691181F2FBE78008E4971 /* Swifty Router */ = {
 			isa = PBXGroup;
 			children = (
+				211ABBF4209B4645004418AA /* MoreMore */,
 				8B36912B1F2FBE8A008E4971 /* Login */,
 				8B36912C1F2FBEA9008E4971 /* Profile */,
 				8B36912D1F2FBED2008E4971 /* More */,
@@ -117,6 +178,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		211ABC34209B6D71004418AA /* More */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211ABC3D209B6D71004418AA /* Build configuration list for PBXNativeTarget "More" */;
+			buildPhases = (
+				211ABC31209B6D71004418AA /* Sources */,
+				211ABC32209B6D71004418AA /* Frameworks */,
+				211ABC33209B6D71004418AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = More;
+			productName = More;
+			productReference = 211ABC35209B6D71004418AA /* More.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8B3691151F2FBE78008E4971 /* Swifty Router */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B3691281F2FBE78008E4971 /* Build configuration list for PBXNativeTarget "Swifty Router" */;
@@ -124,10 +202,12 @@
 				8B3691121F2FBE78008E4971 /* Sources */,
 				8B3691131F2FBE78008E4971 /* Frameworks */,
 				8B3691141F2FBE78008E4971 /* Resources */,
+				211ABC40209B6D71004418AA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				211ABC3B209B6D71004418AA /* PBXTargetDependency */,
 			);
 			name = "Swifty Router";
 			productName = "Swifty Router";
@@ -140,10 +220,14 @@
 		8B36910E1F2FBE78008E4971 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Zamzam Inc.";
 				TargetAttributes = {
+					211ABC34209B6D71004418AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					8B3691151F2FBE78008E4971 = {
 						CreatedOnToolsVersion = 9.0;
 					};
@@ -163,11 +247,19 @@
 			projectRoot = "";
 			targets = (
 				8B3691151F2FBE78008E4971 /* Swifty Router */,
+				211ABC34209B6D71004418AA /* More */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		211ABC33209B6D71004418AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B3691141F2FBE78008E4971 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,17 +269,27 @@
 				8B784C881F2FC2AD0082ED1D /* More.storyboard in Resources */,
 				8B784C861F2FC2A40082ED1D /* Profile.storyboard in Resources */,
 				8B3691211F2FBE78008E4971 /* Assets.xcassets in Resources */,
+				211ABBF8209B46AC004418AA /* MoreMore.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		211ABC31209B6D71004418AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211ABC38209B6D71004418AA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8B3691121F2FBE78008E4971 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8BC7A5621F2FD23F00AA0072 /* UIStoryboard.swift in Sources */,
+				211ABBF6209B466B004418AA /* MoreMore.swift in Sources */,
 				8B784C8A1F2FC2BF0082ED1D /* ProfileViewController.swift in Sources */,
 				8B784C8C1F2FC2C80082ED1D /* MoreViewController.swift in Sources */,
 				8B36911C1F2FBE78008E4971 /* LoginViewController.swift in Sources */,
@@ -197,6 +299,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		211ABC3B209B6D71004418AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211ABC34209B6D71004418AA /* More */;
+			targetProxy = 211ABC3A209B6D71004418AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8BC7A55E1F2FCFA100AA0072 /* Main.storyboard */ = {
@@ -210,6 +320,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		211ABC3E209B6D71004418AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = More/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zamzam.Swifty-Router.More";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		211ABC3F209B6D71004418AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = More/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.zamzam.Swifty-Router.More";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8B3691261F2FBE78008E4971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,6 +460,7 @@
 		8B3691291F2FBE78008E4971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Swifty Router/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -333,6 +474,7 @@
 		8B36912A1F2FBE78008E4971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Swifty Router/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -346,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		211ABC3D209B6D71004418AA /* Build configuration list for PBXNativeTarget "More" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211ABC3E209B6D71004418AA /* Debug */,
+				211ABC3F209B6D71004418AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8B3691111F2FBE78008E4971 /* Build configuration list for PBXProject "Swifty Router" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
