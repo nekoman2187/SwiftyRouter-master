@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
+// Test ß
 class MoreViewController: UIViewController {
-
+ 
     @IBOutlet weak var someLabel: UILabel!
     
     var someProperty: String?
